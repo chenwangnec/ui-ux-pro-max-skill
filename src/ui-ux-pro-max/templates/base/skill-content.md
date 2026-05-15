@@ -356,3 +356,14 @@ Scope notice: This checklist is for App UI (iOS/Android/React Native/Flutter).
 - [ ] Color is not the only indicator
 - [ ] Reduced motion and dynamic text size are supported without layout breakage
 - [ ] Accessibility traits/roles/states (selected, disabled, expanded) are announced correctly
+
+## Skill Coordination
+
+When the task involves both **design intelligence** (this skill) and **front-end implementation**,
+invoke the `web-design-engineer` skill after completing design system selection:
+
+1. Use this skill to generate the design system (style, colors, typography, UX rules)
+2. Then invoke the `web-design-engineer` skill with the design system output as context
+3. The web-design-engineer skill will implement the visual artifact using the design tokens
+
+This ensures design decisions flow automatically into implementation.
