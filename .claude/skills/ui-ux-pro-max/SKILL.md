@@ -299,6 +299,17 @@ This Skill is not needed in the following situations:
 - `drill-down-consistency` - Drill-down interactions must maintain a clear back-path and hierarchy breadcrumb
 - `time-scale-clarity` - Time series charts must clearly label time granularity (day/week/month) and allow switching
 
+## Skill Coordination
+
+When the task involves both **design intelligence** (this skill) and **front-end implementation**,
+invoke the `web-design-engineer` skill after completing design system selection:
+
+1. Use this skill to generate the design system (style, colors, typography, UX rules)
+2. Then invoke the `web-design-engineer` skill with the design system output as context
+3. The web-design-engineer skill will implement the visual artifact using the design tokens
+
+This ensures design decisions flow automatically into implementation.
+
 ## How to Use
 
 Search specific domains using the CLI tool below.
